@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="SMM PRO — онлайн-курс по SMM-продвижению. Научись зарабатывать на продвижении в соцсетях.">
+  <meta property="og:title" content="SMM PRO — Курс по SMM-продвижению">
+  <meta property="og:description" content="Научись зарабатывать на продвижении в соцсетях. Старт курса — 15 мая 2026.">
+  <meta property="og:image" content="./images/preview.jpg">
+  <meta property="og:type" content="website">
+  <title>SMM PRO — Курс по SMM-продвижению</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🚀</text></svg>">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header" role="banner">
+    <div class="container header__inner">
+      <a href="#" class="header__logo" aria-label="SMM PRO — на главную">SMM<span class="header__logo-accent">PRO</span></a>
+      <button class="header__burger burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="header__nav" id="mainNav" role="navigation" aria-label="Основное меню">
+        <ul class="header__menu">
+          <li><a href="#program" class="header__link">Программа</a></li>
+          <li><a href="#author" class="header__link">Спикеры</a></li>
+          <li><a href="#tariffs" class="header__link">Тарифы</a></li>
+          <li><a href="#reviews" class="header__link">Отзывы</a></li>
+          <li><a href="#contact" class="header__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="heroTitle">Научись зарабатывать<br>на <span class="hero__accent">SMM-продвижении</span><br>с нуля до PRO</h1>
+        <p class="hero__subtitle">Онлайн-курс, который превратит тебя в востребованного SMM-специалиста</p>
+        <a href="#tariffs" class="hero__cta btn btn--primary">Выбрать тариф</a>
+      </div>
+    </section>
+
+    <!-- Pain -->
+    <section class="pain" id="pain" aria-labelledby="painTitle">
+      <div class="container">
+        <h2 class="pain__title section-title" id="painTitle">Знакомо?</h2>
+        <ul class="pain__list">
+          <li class="pain__item">
+            <span class="pain__icon material-symbols-rounded" aria-hidden="true">sentiment_dissatisfied</span>
+            <p class="pain__text">Тонете в хаосе соцсетей и не понимаете, как работает алгоритм</p>
+          </li>
+          <li class="pain__item">
+            <span class="pain__icon material-symbols-rounded" aria-hidden="true">trending_down</span>
+            <p class="pain__text">Вкладываете деньги в рекламу, а подписчики не приходят</p>
+          </li>
+          <li class="pain__item">
+            <span class="pain__icon material-symbols-rounded" aria-hidden="true">hourglass_empty</span>
+            <p class="pain__text">Тратите часы на контент, а продаж нет</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Result -->
+    <section class="result" id="result" aria-labelledby="resultTitle">
+      <div class="container">
+        <h2 class="result__title section-title" id="resultTitle">После курса вы:</h2>
+        <ul class="result__list">
+          <li class="result__item">
+            <span class="result__icon material-symbols-rounded" aria-hidden="true">rocket_launch</span>
+            <p class="result__text">Запускаете рекламу, которая окупается в 3–5 раз</p>
+          </li>
+          <li class="result__item">
+            <span class="result__icon material-symbols-rounded" aria-hidden="true">auto_awesome</span>
+            <p class="result__text">Создаёте контент, который приводит клиентов на автомате</p>
+          </li>
+          <li class="result__item">
+            <span class="result__icon material-symbols-rounded" aria-hidden="true">payments</span>
+            <p class="result__text">Берёте от 50 000 ₽ за ведение одного клиента</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Program -->
+    <section class="program" id="program" aria-labelledby="programTitle">
+      <div class="container">
+        <h2 class="program__title section-title" id="programTitle">Программа курса</h2>
+        <div class="program__accordion accordion" role="region" aria-label="Модули курса">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="module1">
+              <span class="accordion__num">01</span>
+              <span class="accordion__label">Основы SMM: площадки, аудитория, стратегия</span>
+              <span class="accordion__icon material-symbols-rounded" aria-hidden="true">add</span>
+            </button>
+            <div class="accordion__panel" id="module1" role="region" hidden>
+              <p class="accordion__desc">Разберёмся, какие соцсети работают в 2026 году, как находить целевую аудиторию и строить контент-стратегию.</p>
+              <ul class="accordion__lessons">
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Обзор площадок: ВКонтакте, Telegram, Instagram* (*принадлежит Meta, запрещена в РФ)</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Портрет целевой аудитории: CustDev и кастдев-интервью</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Контент-стратегия: отложенный постинг и контент-план</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Воронка прогрева: как вести подписчика к покупке</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> KPI и аналитика: что считать и зачем</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="module2">
+              <span class="accordion__num">02</span>
+              <span class="accordion__label">Таргетированная реклама: настройка, креативы, бюджет</span>
+              <span class="accordion__icon material-symbols-rounded" aria-hidden="true">add</span>
+            </button>
+            <div class="accordion__panel" id="module2" role="region" hidden>
+              <p class="accordion__desc">Научимся настраивать рекламные кампании, которые приносят лиды, а не просто крутят бюджет.</p>
+              <ul class="accordion__lessons">
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Рекламные кабинеты: устройство и возможности</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Сегментация аудитории: интересы, поведение, ретаргетинг</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Креативы, которые цепляют: дизайн, текст, УТП</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> A/B-тестирование: как найти связку, которая конвертит</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Бюджетирование: как не слить деньги на старте</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="module3">
+              <span class="accordion__num">03</span>
+              <span class="accordion__label">Поиск клиентов и упаковка услуг</span>
+              <span class="accordion__icon material-symbols-rounded" aria-hidden="true">add</span>
+            </button>
+            <div class="accordion__panel" id="module3" role="region" hidden>
+              <p class="accordion__desc">Выходим на рынок: упаковываем портфолио, назначаем цену, находим первых клиентов.</p>
+              <ul class="accordion__lessons">
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Упаковка личного бренда и кейсов</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Ценообразование: сколько брать за ведение</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Площадки для поиска клиентов: биржи, нетворкинг</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Скрипты продаж: как закрывать клиента на созвоне</li>
+                <li class="accordion__lesson"><span class="accordion__check material-symbols-rounded" aria-hidden="true">check_circle</span> Юридические основы: договор, самозанятость, ИП</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author -->
+    <section class="author" id="author" aria-labelledby="authorTitle">
+      <div class="container">
+        <h2 class="author__title section-title" id="authorTitle">Авторы курса</h2>
+        <div class="author__grid">
+          <article class="author__card">
+            <img src="images/speacker1.webp" alt="Анна Ковалёва" class="author__photo" loading="lazy" width="200" height="200">
+            <h3 class="author__name">Анна Ковалёва</h3>
+            <p class="author__role">SMM-стратег, ex-руководитель отдела маркетинга в Ozon</p>
+            <ul class="author__stats">
+              <li class="author__stat"><strong>8 лет</strong> в маркетинге</li>
+              <li class="author__stat"><strong>50+</strong> реализованных стратегий</li>
+            </ul>
+          </article>
+          <article class="author__card">
+            <img src="images/speacker2.webp" alt="Дмитрий Волков" class="author__photo" loading="lazy" width="200" height="200">
+            <h3 class="author__name">Дмитрий Волков</h3>
+            <p class="author__role">Таргетолог, экс-руководитель performance-отдела в Wildberries</p>
+            <ul class="author__stats">
+              <li class="author__stat"><strong>120+</strong> запущенных кампаний</li>
+              <li class="author__stat"><strong>₽150 млн</strong> бюджетов под управлением</li>
+            </ul>
+          </article>
+          <article class="author__card">
+            <img src="images/speacker3.webp" alt="Елена Смирнова" class="author__photo" loading="lazy" width="200" height="200">
+            <h3 class="author__name">Елена Смирнова</h3>
+            <p class="author__role">Контент-маркетолог, автор Telegram-канала на 80 000 подписчиков</p>
+            <ul class="author__stats">
+              <li class="author__stat"><strong>3 года</strong> ведёт канал</li>
+              <li class="author__stat"><strong>80 000</strong> подписчиков</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tariffs -->
+    <section class="tariffs" id="tariffs" aria-labelledby="tariffsTitle">
+      <div class="container">
+        <h2 class="tariffs__title section-title" id="tariffsTitle">Тарифы</h2>
+        <div class="tariffs__grid">
+          <article class="tariffs__card">
+            <h3 class="tariffs__name">Базовый</h3>
+            <p class="tariffs__price">12 900 <span class="tariffs__currency">₽</span></p>
+            <ul class="tariffs__features">
+              <li class="tariffs__feature">3 модуля в записи</li>
+              <li class="tariffs__feature">15 видеоуроков</li>
+              <li class="tariffs__feature">Чат участников</li>
+              <li class="tariffs__feature">Доступ на 3 месяца</li>
+            </ul>
+            <button class="tariffs__btn btn btn--outline" data-tariff="basic">Выбрать</button>
+          </article>
+          <article class="tariffs__card tariffs__card--popular">
+            <span class="tariffs__badge">Хит продаж</span>
+            <h3 class="tariffs__name">PRO</h3>
+            <p class="tariffs__price">24 900 <span class="tariffs__currency">₽</span></p>
+            <ul class="tariffs__features">
+              <li class="tariffs__feature">3 модуля в записи + живые вебинары</li>
+              <li class="tariffs__feature">15 видеоуроков + 6 воркшопов</li>
+              <li class="tariffs__feature">Закрытый чат с кураторами</li>
+              <li class="tariffs__feature">Проверка домашних заданий</li>
+              <li class="tariffs__feature">Доступ на 6 месяцев</li>
+            </ul>
+            <button class="tariffs__btn btn btn--primary" data-tariff="pro">Выбрать</button>
+          </article>
+          <article class="tariffs__card">
+            <h3 class="tariffs__name">VIP</h3>
+            <p class="tariffs__price">49 900 <span class="tariffs__currency">₽</span></p>
+            <ul class="tariffs__features">
+              <li class="tariffs__feature">Всё из PRO + личные консультации</li>
+              <li class="tariffs__feature">Индивидуальный разбор проекта</li>
+              <li class="tariffs__feature">Помощь в поиске первых клиентов</li>
+              <li class="tariffs__feature">Доступ на 12 месяцев</li>
+              <li class="tariffs__feature">Сертификат о прохождении</li>
+            </ul>
+            <button class="tariffs__btn btn btn--outline" data-tariff="vip">Выбрать</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timer -->
+    <section class="timer" id="timer" aria-labelledby="timerTitle">
+      <div class="container">
+        <h2 class="timer__title section-title" id="timerTitle">До конца акции осталось:</h2>
+        <div class="timer__clock" role="timer" aria-live="polite" data-sale-end="2026-05-15T23:59:59+03:00">
+          <div class="timer__block"><span class="timer__value" id="timerDays">00</span><span class="timer__label">дней</span></div>
+          <span class="timer__sep">:</span>
+          <div class="timer__block"><span class="timer__value" id="timerHours">00</span><span class="timer__label">часов</span></div>
+          <span class="timer__sep">:</span>
+          <div class="timer__block"><span class="timer__value" id="timerMinutes">00</span><span class="timer__label">минут</span></div>
+          <span class="timer__sep">:</span>
+          <div class="timer__block"><span class="timer__value" id="timerSeconds">00</span><span class="timer__label">секунд</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <h2 class="reviews__title section-title" id="reviewsTitle">Отзывы выпускников</h2>
+        <div class="reviews__grid">
+          <article class="reviews__card">
+            <div class="reviews__stars" aria-label="Оценка: 5 из 5">
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+            </div>
+            <p class="reviews__text">Прошла курс за месяц, на второй взяла первого клиента на 30 000 ₽. Всё чётко, структурированно, без воды.</p>
+            <p class="reviews__author">Мария К.</p>
+          </article>
+          <article class="reviews__card">
+            <div class="reviews__stars" aria-label="Оценка: 5 из 5">
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+            </div>
+            <p class="reviews__text">До курса вообще не понимал, как работает таргет. Сейчас веду 4 клиентов, кайфую от профессии.</p>
+            <p class="reviews__author">Алексей П.</p>
+          </article>
+          <article class="reviews__card">
+            <div class="reviews__stars" aria-label="Оценка: 5 из 5">
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+              <span class="reviews__star material-symbols-rounded" aria-hidden="true">star</span>
+            </div>
+            <p class="reviews__text">Лучшая инвестиция в себя. Окупила курс за 2 недели. Отдельный респект за блок по упаковке — это вау.</p>
+            <p class="reviews__author">Ольга Н.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <h2 class="contact__title section-title" id="contactTitle">Оставьте заявку</h2>
+        <p class="contact__subtitle">Заполните форму, и мы свяжемся с вами в течение 15 минут</p>
+        <form class="contact__form" id="contactForm" novalidate>
+          <input type="hidden" name="tariff" id="tariffInput" value="">
+          <div class="contact__field">
+            <label for="contactName" class="contact__label">Имя</label>
+            <input type="text" id="contactName" name="name" class="contact__input" placeholder="Ваше имя" required autocomplete="name">
+            <span class="contact__error" id="nameError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="contact__field">
+            <label for="contactPhone" class="contact__label">Телефон</label>
+            <input type="tel" id="contactPhone" name="phone" class="contact__input" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+            <span class="contact__error" id="phoneError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="contact__field">
+            <label for="contactEmail" class="contact__label">Email</label>
+            <input type="email" id="contactEmail" name="email" class="contact__input" placeholder="your@email.ru" required autocomplete="email">
+            <span class="contact__error" id="emailError" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="contact__submit btn btn--primary">Отправить заявку</button>
+          <p class="contact__agree">Нажимая кнопку, вы соглашаетесь с <a href="#" id="policyLink">политикой конфиденциальности</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" id="stickyCTA" aria-hidden="true">
+    <a href="#contact" class="btn btn--primary sticky-cta__btn">Записаться на курс</a>
+  </div>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-consent" id="cookieConsent" role="dialog" aria-labelledby="cookieText" aria-hidden="false">
+    <p class="cookie-consent__text" id="cookieText">Мы используем cookies для улучшения работы сайта. Продолжая, вы соглашаетесь с <a href="#" id="cookiePolicyLink">политикой конфиденциальности</a>.</p>
+    <div class="cookie-consent__actions">
+      <button class="cookie-consent__btn cookie-consent__btn--accept btn btn--primary btn--sm" id="cookieAccept">Принять</button>
+      <button class="cookie-consent__btn cookie-consent__btn--decline btn btn--outline btn--sm" id="cookieDecline">Отклонить</button>
+    </div>
+  </div>
+
+  <!-- Policy Modal -->
+  <div class="modal" id="policyModal" role="dialog" aria-labelledby="policyModalTitle" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">
+        <span class="material-symbols-rounded" aria-hidden="true">close</span>
+      </button>
+      <h2 class="modal__title" id="policyModalTitle">Политика конфиденциальности</h2>
+      <div class="modal__body">
+        <p>Настоящая Политика конфиденциальности определяет, как сайт SMM PRO собирает, использует и защищает персональные данные пользователей.</p>
+        <p><strong>1. Сбор данных.</strong> Мы собираем следующие данные: имя, номер телефона, адрес электронной почты, которые вы предоставляете через форму заявки.</p>
+        <p><strong>2. Использование данных.</strong> Данные используются исключительно для связи с вами по вопросу обучения на курсе SMM PRO.</p>
+        <p><strong>3. Защита данных.</strong> Мы принимаем все необходимые меры для защиты ваших персональных данных от несанкционированного доступа.</p>
+        <p><strong>4. Передача третьим лицам.</strong> Мы не передаём ваши данные третьим лицам без вашего согласия.</p>
+        <p><strong>5. Cookies.</strong> Сайт использует cookies для улучшения пользовательского опыта. Вы можете отключить cookies в настройках браузера.</p>
+        <p>По всем вопросам обращайтесь через форму обратной связи на сайте.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__main">© 2026 SMM PRO. Все права защищены. <a href="#" id="footerPolicyLink">Политика конфиденциальности</a></p>
+      <p class="footer__demo">
+        <span class="footer__demo-icon" aria-hidden="true">✨</span>
+        Демонстрационный проект. Разработан веб-разработчиком
+        <a href="https://t.me/asyalapa" target="_blank" rel="noopener noreferrer" class="footer__dev">Анастасией М</a>
+        <span class="footer__tg">@asyalapa</span> — май 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
