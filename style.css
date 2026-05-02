@@ -148,6 +148,11 @@ button {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
+  transition: box-shadow var(--transition);
+}
+
+.header--shadow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
 .header__inner {
