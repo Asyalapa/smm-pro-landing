@@ -82,7 +82,7 @@ button {
 
 /* Section Title */
 .section-title {
-  font-size: clamp(28px, calc(4vw + 8px), 48px);
+  font-size: 28px;
   text-align: center;
   background: var(--color-gradient);
   -webkit-background-clip: text;
@@ -242,7 +242,7 @@ button {
 }
 
 .hero__title {
-  font-size: clamp(32px, 7vw, 56px);
+  font-size: 32px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -583,7 +583,7 @@ button {
 
 .timer__value {
   display: block;
-  font-size: clamp(36px, 8vw, 64px);
+  font-size: 36px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   color: var(--color-accent-light);
@@ -943,6 +943,34 @@ button {
   a {
     color: #000;
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .timer__value {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 48px;
+  }
+
+  .hero__title {
+    font-size: 56px;
+  }
+
+  .timer__value {
+    font-size: 64px;
   }
 }
 
