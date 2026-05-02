@@ -224,7 +224,7 @@ button {
 }
 
 /* ==========================================
-   Hero
+   Hero Section
    ========================================== */
 .hero {
   position: relative;
@@ -236,28 +236,199 @@ button {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('images/fon.webp') center/cover no-repeat;
-  opacity: 0.25;
+  background:
+    /* Затемняющий градиент поверх картинки */
+    linear-gradient(135deg, rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.75)),
+    /* Акцентный градиент для атмосферы */
+    radial-gradient(circle at 20% 40%, rgba(168, 85, 247, 0.15), transparent 60%),
+    /* Фоновая картинка */
+    url('images/fon.webp') center/cover no-repeat;
   z-index: -1;
 }
 
+.hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.1), transparent 50%);
+  pointer-events: none;
+}
+
+/* ---------- HERO BADGE ---------- */
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-surface);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-border);
+}
+
+.hero__badge span:first-child {
+  color: #ffd700;
+}
+
+.hero__badge span:nth-child(2) {
+  color: var(--color-text-secondary);
+}
+
+.hero__badge span:last-child {
+  color: var(--color-accent-light);
+}
+
+/* ---------- HERO TITLE ---------- */
 .hero__title {
-  font-size: 32px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
   line-height: 1.2;
-  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
 }
 
 .hero__accent {
   background: var(--color-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.hero__highlight {
+  background: linear-gradient(135deg, #ffd700, #fbbf24);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- HERO SUBTITLE ---------- */
+.hero__subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- HERO BUTTONS ---------- */
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.btn--primary {
+  background: var(--color-gradient);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 0 20px rgba(var(--color-accent-rgb), 0.3);
+}
+
+.btn--primary:hover {
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid rgba(var(--color-accent-rgb), 0.4);
+  color: var(--color-accent-light);
+  box-shadow: none;
+}
+
+.btn--outline:hover {
+  border-color: var(--color-accent);
+  background: rgba(var(--color-accent-rgb), 0.1);
+  transform: translateY(-2px);
+}
+
+.hero__btn svg {
+  transition: transform 0.2s ease;
+}
+
+.hero__btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ---------- HERO STATS ---------- */
+.hero__stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.hero__stat {
+  text-align: center;
+}
+
+.hero__stat strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: var(--color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: 0.25rem;
 }
 
-.hero__subtitle {
-  font-size: 18px;
-  color: var(--color-text-secondary);
-  margin-bottom: 36px;
+.hero__stat span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- Адаптив для мобильных ---------- */
+@media (max-width: 560px) {
+  .hero__stats {
+    gap: 1.5rem;
+  }
+
+  .hero__stat strong {
+    font-size: 1rem;
+  }
+
+  .hero__stat span {
+    font-size: 0.7rem;
+  }
+
+  .hero__buttons {
+    gap: 0.8rem;
+  }
+
+  .hero__badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 /* ==========================================
